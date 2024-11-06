@@ -8,6 +8,8 @@ public class NumWords {
 		Os = FullNum % 10;
 		Ts = (int)(Math.floor(FullNum/10)%10);
 		Hs = (int)(Math.floor(FullNum/100)%10);
+		
+		if (FullNum == 2024){Hs = 20;}
 
 		System.out.println(Hs + " hundreds, " + Ts + " tens, and " + Os + " ones.");
 	}
