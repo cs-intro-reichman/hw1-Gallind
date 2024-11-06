@@ -16,15 +16,39 @@ public class TimeFormat {
 		//05:45
 		//16:02
 		//hours = Integer.parseInt(args[0][0]+args[0][1]);
+		//"00:00" = "0:00 AM"
+		//"01:02" = "1:02 AM"
 		boolean day;
 		String time;
 		day = hours>=0 && hours<12;
-		if (day){
-			time = hours + ":" + minutes + " AM";
+		String SDay; //AM PM
+
+		if (day){SDay = "AM";} else{SDay = "PM";}
+
+		//PM 12-23
+		if (!day && hours!=12){
+			hours = hours-12;
 		}
-		else{
-			time = (hours-12) + ":" + minutes + " PM";
-		}
+
+		time = hours + ":" + args[0].charAt(3) + args[0].charAt(4) + " " + SDay;
+
 		System.out.println(time);
+		/*
+		if (args[0]!="00:00"){
+			boolean day;
+			String time;
+			day = hours>=0 && hours<12;
+			if (day){
+				time = hours + ":" + minutes + " AM";
+			}
+			else{
+				if (hours!=12){
+				time = (hours-12) + ":" + minutes + " PM";}
+				else{time = (hours) + ":" + minutes + " PM";}
+			}
+			System.out.println(time);
+	}
+	else{System.out.println("0:00");}
+	*/
 	}
 }

@@ -9,6 +9,6 @@ public class NumWords {
 		Ts = (int)(Math.floor(FullNum/10)%10);
 		Hs = (int)(Math.floor(FullNum/100)%10);
 
-		System.out.println(Hs + " Hundreds, " + Ts + " Tens, and " + Os + " ones.");
+		System.out.println(Hs + " hundreds, " + Ts + " tens, and " + Os + " ones.");
 	}
 }
