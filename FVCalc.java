@@ -9,6 +9,6 @@ public class FVCalc {
 		double Fvalue = Double.parseDouble(Cvalue);
 		double Drate = Double.parseDouble(rate);
 		Fvalue = Fvalue*(Math.pow((1+Drate/100),Dtime));
-		System.out.println("After " + Ptime + " years, $" + Cvalue + " saved at " + Drate + "% will yield $" +(int)Fvalue );
+		System.out.println("After " + Ptime + " years, a $" + Cvalue + " saved at " + Drate + "% will yield $" +(int)Fvalue );
 	}
 }
