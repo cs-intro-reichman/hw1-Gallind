@@ -2,16 +2,16 @@
 public class NumWords {
 	public static void main(String args[]) {
 	    // Replace this comment with your code
-		int FullNum = Integer.valueOf(args[0]);
+		int fullNum = Integer.valueOf(args[0]);
 
-		int Hs, Ts, Os;
-		Os = FullNum % 10;
-		Ts = (int)(Math.floor(FullNum/10)%10);
-		Hs = (int)(Math.floor(FullNum/100));
+		int hs, ts, os;
+		os = fullNum % 10;
+		ts = (int)(Math.floor(fullNum/10)%10);
+		hs = (int)(Math.floor(fullNum/100));
 
 		
 		//if (FullNum==2024){Hs=20;}
 
-		System.out.println(Hs + " hundreds, " + Ts + " tens, and " + Os + " ones.");
+		System.out.println(hs + " hundreds, " + ts + " tens, and " + os + " ones.");
 	}
 }

@@ -9,9 +9,10 @@ public class Bill3 {
 		
 		double amountEach = Double.parseDouble(amountBillStr);
 
-		amountEach = Math.ceil(amountEach/3);
+		amountEach = Math.ceil(amountEach / 3);
 
-		System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 + ": pay " + amountEach + " Shekels each");
+		System.out.println("Dear " + name3 + ", " + name2 + ", and " + name1 + ": pay " +
+						    amountEach + " Shekels each");
 	    // Replace this comment with the rest of your code   
 	}
 }

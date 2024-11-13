@@ -2,13 +2,13 @@
 public class FVCalc {
 	public static void main(String[] args){
 		// Replace this comment with your code
-		String Cvalue = args[0];
-		String Ptime = args[2];
+		String cValue = args[0];
+		String pTime = args[2];
 		String rate = args[1];
-		double Dtime = Double.parseDouble(Ptime);
-		double Fvalue = Double.parseDouble(Cvalue);
-		double Drate = Double.parseDouble(rate);
-		Fvalue = Fvalue*(Math.pow((1+Drate/100),Dtime));
-		System.out.println("After " + Ptime + " years, a $" + Cvalue + " saved at " + Drate + "% will yield $" +(int)Fvalue );
+		double dTime = Double.parseDouble(pTime);
+		double fValue = Double.parseDouble(cValue);
+		double dRate = Double.parseDouble(rate);
+		fValue = fValue*(Math.pow((1 + dRate / 100),dTime));
+		System.out.println("After " + pTime + " years, a $" + cValue + " saved at " + dRate + "% will yield $" +(int)fValue );
 	}
 }

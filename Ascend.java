@@ -9,14 +9,14 @@ public class Ascend {
 		int a,b,c;
 		
 		Random r = new Random();
-		a = r.nextInt(Integer.valueOf(args[0])+1);
-		b = r.nextInt(Integer.valueOf(args[0])+1);
-		c = r.nextInt(Integer.valueOf(args[0])+1);
+		a = r.nextInt(Integer.valueOf(args[0]) + 1);
+		b = r.nextInt(Integer.valueOf(args[0]) + 1);
+		c = r.nextInt(Integer.valueOf(args[0]) + 1);
 
 		int min,mid,max;
 		max = Math.max(a,Math.max(b,c));
 		min = Math.min(a,Math.min(b, c));
-		mid = a+b+c-max-min;
+		mid = a + b + c - max - min;
 
 		System.out.println(a + " " + b + " " + c);
 		System.out.println(min + " " + mid + " " + max);
